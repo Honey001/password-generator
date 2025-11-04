@@ -110,11 +110,9 @@ const copyText = () => {
 	// Copy the text inside the text field
 	navigator.clipboard.writeText(passwordInput.value);
 };
-generateBtn.addEventListener("click", () => {
+generateBtn.addEventListener("click", (e) => {
 	generatePassword();
-	setTimeout(() => {
-		generateBtn.classList.add("resetBtn");
-	}, 500);
+	e.target.blur();
 });
 copyImg.addEventListener("click", () => {
 	copyText();

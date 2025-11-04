@@ -307,6 +307,12 @@ input[type="checkbox"]:checked::after {
 	color: var(--GREEN);
 	font-size: 1.3rem;
 }
+@media (hover: none) {
+  .generate-btn:hover {
+    background: none;
+    color: inherit;
+  }
+}
 .hidden {
 	display: none;
 }
