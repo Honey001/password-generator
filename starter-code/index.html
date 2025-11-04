@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png" />
+		<link
+			rel="stylesheet"
+			href="./style.css" />
+		<script
+			src="./main.js"
+			defer></script>
+
+		<title>Password generator app</title>
+	</head>
+	<body>
+		<main class="password-container">
+			<h1 class="password-title">Password Generator</h1>
+
+			<article class="password-generator-container">
+				<div class="password-display-container">
+					<input
+						type="text"
+						disabled
+						placeholder="P4$5W0rD!" />
+					<div class="copy-logo-container">
+						<p class="copy-text hidden">copied</p>
+						<img
+							src="./assets/images/icon-copy.svg"
+							alt="icon-copy" />
+					</div>
+				</div>
+
+				<div class="password-strength-container">
+					<div class="character-length-text">
+						<label for="">Character Length</label>
+						<p class="character-length-no">2</p>
+					</div>
+					<div class="character-length-range">
+						<input
+							type="range"
+							min="1"
+							max="20"
+							value="5" />
+					</div>
+
+					<div class="checkbox-options">
+						<div class="check">
+							<input
+								type="checkbox"
+								name="checkbox-uppercase"
+								id="checkbox-uppercase" />
+							<label for="checkbox"
+								>Include Uppercase Letters</label
+							>
+						</div>
+						<div class="check">
+							<input
+								type="checkbox"
+								name="checkbox-lowercase"
+								id="checkbox-lowercase" />
+							<label for="checkbox">
+								Include Lowercase Letters
+							</label>
+						</div>
+						<div class="check">
+							<input
+								type="checkbox"
+								name="checkbox-number"
+								id="checkbox-number" />
+							<label for="checkbox"> Include Numbers </label>
+						</div>
+						<div class="check">
+							<input
+								type="checkbox"
+								name="checkbox-symbol"
+								id="checkbox-symbol" />
+							<label for="checkbox"> Include Symbols </label>
+						</div>
+					</div>
+
+					<div class="strength-inner-container">
+						<p class="strength-title">Strength</p>
+						<div class="strength-character-length">
+							<p class="strength-text"></p>
+							<div class="strength-bars">
+								<div class="str"></div>
+								<div class="str"></div>
+								<div class="str"></div>
+								<div class="str"></div>
+							</div>
+						</div>
+					</div>
+					<button class="generate-btn">Generate
+						<img src="./assets/images/icon-arrow-right.svg" alt="icon-arrow-right">
+					</button>
+				</div>
+			</article>
+		</main>
+	</body>
+</html>
