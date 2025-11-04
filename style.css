@@ -291,7 +291,7 @@ input[type="checkbox"]:checked::after {
 	align-items: center;
 	gap: 2rem;
 	background-color: var(--GREEN);
-	transition: background-color 0.3s ease-in-out;
+	transition: background-color 0.5s ease-in-out;
 	text-transform: uppercase;
 }
 .resetBtn {
