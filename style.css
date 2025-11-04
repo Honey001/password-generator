@@ -298,8 +298,7 @@ input[type="checkbox"]:checked::after {
 	width: 1rem;
 	height: auto;
 }
-.generate-btn:hover,
-.generate-btn:focus-visible {
+.generate-btn:hover {
 	background-color: transparent;
 	border: 3px solid var(--GREEN);
 	color: var(--GREEN);
