@@ -355,5 +355,5 @@ input[type="checkbox"]:checked::after {
 		border: 3px solid var(--GREEN);
 		color: var(--GREEN);
 		font-size: 1.3rem;
-	}
+}
 }

@@ -112,10 +112,12 @@ const copyText = () => {
 };
 generateBtn.addEventListener("click", (e) => {
 	generatePassword();
-	generateBtn.classList.add("hover-effect");
-	setTimeout(() => {
-		generateBtn.classList.remove("hover-effect");
-	}, 600);
+	if (!passwordInput.value == "") {
+		generateBtn.classList.add("hover-effect");
+		setTimeout(() => {
+			generateBtn.classList.remove("hover-effect");
+		}, 600);
+	}
 	e.target.blur();
 });
 copyImg.addEventListener("click", () => {
