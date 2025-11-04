@@ -228,7 +228,6 @@ input[type="checkbox"]:checked::after {
 	align-items: center;
 	gap: 0.8rem;
 	color: var(--WHITE-GRAY);
-	cursor: pointer;
 }
 .strength-inner-container {
 	display: flex;
