@@ -117,7 +117,7 @@ h1,
 .copy-text {
 	color: var(--GREEN);
 	text-transform: uppercase;
-	font-size: var(--space8);
+	font-size: 0.7rem;
 }
 
 input[type="text"] {
