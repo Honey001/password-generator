@@ -214,7 +214,7 @@ input[type="checkbox"]:checked {
 }
 
 input[type="checkbox"]:checked::after {
-	content: url("./assets/images/icon-check.svg");
+	content: url("./starter-code/assets/images/icon-check.svg");
 	position: absolute;
 	top: 0%;
 	left: 49%;
