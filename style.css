@@ -263,20 +263,22 @@ input[type="checkbox"]:checked::after {
 	border: 2px solid var(--WHITE-GRAY);
 }
 .one {
-	border: none;
 	background-color: var(--RED);
 }
 .two {
-	border: none;
 	background-color: var(--ORANGE);
 }
 .three {
-	border: none;
 	background-color: var(--YELLOW);
 }
 .four {
-	border: none;
 	background-color: var(--GREEN);
+}
+.str.one,
+.str.two,
+.str.three,
+.str.four {
+	border: none;
 }
 .strength-text {
 	font-size: 1rem;
