@@ -180,9 +180,10 @@ input[type="range"]::-webkit-slider-thumb {
 	margin-top: -0.5rem;
 	transition: 0.2s ease;
 }
-input[type="range"]::-webkit-slider-thumb:hover {
-	background: hsl(127, 100%, 82%);
-	transform: scale(1.1);
+input[type="range"]::-webkit-slider-thumb:active {
+	background-color: var(--DARKER-GRAY);
+	transform: scale(1.2);
+	border: 1px solid var(--WHITE);
 }
 .checkbox-options {
 	display: grid;
@@ -204,7 +205,7 @@ input[type="checkbox"] {
 	transition: all 0.3s ease;
 	flex-shrink: 0;
 }
-input[type="checkbox"]:hover {
+input[type="checkbox"]:active {
 	border-color: var(--GREEN);
 }
 
@@ -355,5 +356,13 @@ input[type="checkbox"]:checked::after {
 		border: 3px solid var(--GREEN);
 		color: var(--GREEN);
 		font-size: 1.3rem;
-}
+	}
+	input[type="range"]::-webkit-slider-thumb:hover {
+		background: var(--DARKER-GRAY);
+		transform: scale(1.2);
+		border: 2px solid var(--WHITE);
+	}
+	input[type="checkbox"]:hover {
+		border-color: var(--GREEN);
+	}
 }
