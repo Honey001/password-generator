@@ -315,7 +315,7 @@ input[type="checkbox"]:checked::after {
 /* MEDIA QUERY */
 @media (min-width: 38rem) {
 	.password-container {
-		min-height: 120vh;
+		min-height: 150vh;
 	}
 	.password-generator-container {
 		margin-inline: 0;
